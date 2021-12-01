@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400&display=swap');
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #111;
+}
+.box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 2%;
+    width: 100%;
+    height: 100vh;
+    margin-top: 40%;
+
+}
+.card {
+    height: 450px;
+    width: 310px;
+    background-color: #fff;
+    transform: scale(0.7) ;
+    border-radius: 8px;
+    box-shadow: 0 0 80px 1px #4169b0;
+
+}
+.info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+.name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #f79f08;
+    position: absolute;
+    top: 100px;
+    letter-spacing: 2px;
+
+}
+.prof {
+    font-size: 25px;
+    color: #555555;
+    position: absolute;
+    top: 140px;
+}
+.divider {
+    background-color: #949594;
+    height: 1.5px;
+    width: 50px;
+    position: absolute;
+    top: 190px;
+}
+.bio {
+    position: absolute;
+    top: 220px;
+    color: #949594;
+    line-height: 28px;
+    font-size: 18px;
+    text-align: center;
+}
+button {
+    position: absolute;
+    bottom: 20px;
+    background-color:#f79f08 ;
+    border: none;
+    font-size: 20px;
+    padding: 13px 25px;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 80px 1px #4169b0;
+    
+
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.linkpicture.com/q/IMG_20210304_121631_1.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover ;
+}
+.card:hover  .photo{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 140%;
+    background-position:0 -25px ;
+    background-image: url(https://www.linkpicture.com/q/IMG_20200825_120803.jpg);
+    background-size: fill ;
+
+
+}
+.photo1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02JM5LJ5UN-5505884e91b7-512);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover ;
+}
+.card:hover  .photo1{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 100%;
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02JM5LJ5UN-5505884e91b7-512);
+    background-size: fill ;
+
+
+}
+.photo2 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02JE3NUS84-fcc19d1fbc4b-512);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover ;
+}
+.card:hover  .photo2{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 100%;
+    
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02JE3NUS84-fcc19d1fbc4b-512);
+    background-size: fill ;
+    
+
+}
+.photo3 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02L0BCJ517-7099ba7048b4-512);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 100%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover ;
+}
+.card:hover  .photo3{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 100%;
+    
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02L0BCJ517-7099ba7048b4-512);
+    background-size: fill ;
+    
+}
+.photo4 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.linkpicture.com/q/фото_Бекболсунова-А.Б.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 120% 120%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover;
+   
+}
+.card:hover  .photo4{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 110% 140%;
+    
+    background-image: url(https://www.linkpicture.com/q/фото_Бекболсунова-А.Б.jpg);
+    background-size: fill;
+    
+    
+}
+.photo4-1 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.linkpicture.com/q/elnura2.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 120% 120%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover;
+   
+}
+.card:hover  .photo4-1{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 110% 130%;
+    
+    background-image: url(https://www.linkpicture.com/q/elnura2.jpg);
+    background-size: fill;
+    
+    
+}
+      
+.photo5 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02LRJ44BDK-7fde7604f500-512);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 120% 120%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover;
+   
+}
+.card:hover  .photo5{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 100%;
+    
+    background-image: url(https://ca.slack-edge.com/THH47V4TS-U02LRJ44BDK-7fde7604f500-512);
+    
+    
+}
+.photo6 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://rnbtheme.com/shortcodes/wp-content/uploads/2016/01/member_22-500x535.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 120% 120%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: cover;
+   
+}
+.card:hover  .photo6{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 100%;
+    
+    background-image: url(https://rnbtheme.com/shortcodes/wp-content/uploads/2016/01/member_22-500x535.jpg);
+    
+    
+}
+.photo7 {
+    height: 100%;
+    width: 100%;
+    background-image: url(https://www.linkpicture.com/q/10355545_744248178971390_7088426459811229185_o.jpg);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    background-size: 100% 110%;
+    border-radius: 8px;
+    transition: 1s;
+    background-size: fill;
+   
+}
+.card:hover  .photo7{
+    transform: scale(0.5, 0.35) translateY(-650px);
+    border-radius: 50%;
+    background-size: 100% 140%;
+    background-size:fill;
+    background-image: url(https://www.linkpicture.com/q/10355545_744248178971390_7088426459811229185_o.jpg);
+    
+    
+}
+a {
+    position: absolute;
+    bottom: -70px;
+    font-size: 25px;
+    color: #fabe58;
+    background-color: #fff;
+    width: 100%;
+    padding: 12px 0px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 80px 1px #4169b0;
+
+}
