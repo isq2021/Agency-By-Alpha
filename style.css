@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
-body{
+body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
-:root{
+
+:root {
     --blue: #007BFF;
     --indigo: #6610F2;
     --purple: #6F42C1;
@@ -28,95 +29,86 @@ body{
     --light: #F8F9FA;
     --dark: #343A40;
 }
-header{
+
+header {
     background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
     background-repeat: no-repeat;
-    
     background-position: center center;
     background-size: cover;
-    height:100%;
+    height: 100%;
     width: 100%;
-    
-    
 }
-.navbar{
+
+.navbar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background: transparent;
     padding: 30px;
     position: fixed;
     top: 0;
-    background: rgba(248, 249, 250,0);
+    background: rgba(248, 249, 250, 0);
     z-index: 1000;
     gap: 100px;
     animation: slideInFromLeft 1s ease-in;
     margin-left: 5%;
     margin-right: 5%;
- 
 }
+
 @keyframes slideInFromLeft {
     0% {
         transform: translateX(-100%);
     }
-
     100% {
         transform: translateX(0);
     }
 }
-.navbar-brand{
-    color:var(--warning);
+
+.navbar-brand {
+    color: var(--warning);
     padding-top: 5px;
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.0625em;
     margin-left: 5%;
-    
-
 }
 
-
 .nav-menu {
-    
     list-style: none;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 15%;
     padding: 0;
     width: 100%;
-    
-    
-   
-  
 }
-.navbar-menu a{
+
+.navbar-menu a {
     text-decoration: none;
     color: white;
 }
-.navbar-menu a:hover{
+
+.navbar-menu a:hover {
     color: #fed136;
-    
 }
-.nav-item{
-    
+
+.nav-item {
     font-weight: 400;
-    
 }
 
-
-.showcase-text{
+.showcase-text {
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 12% 5% 12% 5%;
-
 }
-.fix-flex{
+
+.fix-flex {
     clear: both;
 }
-.showcase-text-1{
+
+.showcase-text-1 {
     font-size: 25px;
     font-style: italic;
     line-height: 2.40px;
@@ -125,41 +117,41 @@ header{
     font-family: 'Droid Serif';
     letter-spacing: 2px;
 }
-.showcase-text-2{
+
+.showcase-text-2 {
     font-size: 35px;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
-    
     line-height: 2.40px;
     margin-bottom: 16px;
 }
-.btn{
+
+.btn {
     display: inline-block;
     padding: 25px 50px;
-    
     background-color: var(--yellow);
     text-transform: uppercase;
     border-radius: 5px;
     margin-top: 20px;
     font-size: 17px;
     font-weight: bold;
-
 }
-.btn:hover{
-    
+
+.btn:hover {
     display: inline-block;
     padding: 25px 50px;
-    
     background-color: rgb(238, 157, 5);
     text-transform: uppercase;
     border-radius: 5px;
 }
-.hamburger{
+
+.hamburger {
     display: none;
     cursor: pointer;
     margin-left: 20rem;
-  }
-.bar{
+}
+
+.bar {
     display: block;
     width: 25px;
     height: 3px;
@@ -167,488 +159,430 @@ header{
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: white;
-  }
+}
+
 
 /* header responsive */
+
+
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-@media only screen 
-and (max-width: 1024px) 
- {
-  
-  header{
-      background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
-      background-repeat: no-repeat;
-      
-      background-position: center center;
-      background-size: cover;
-      height:500px;
-      
-  }
-  .showcase-text{
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    
-  
-  }
-  .fix-flex{
-      clear: both;
-  }
-  .showcase-text-1 h2{
-      font-size: 3vw;
-      font-style: italic;
-      line-height: 2.40px;
-      margin-bottom: 16px;
-      font-weight: 200;
-      font-family: 'Droid Serif';
-      letter-spacing: 2px;
-  }
-  .showcase-text-2 h1{
-      font-size: 3vw;
-      font-weight: 500;
-      font-family: 'Montserrat', sans-serif;
-      
-      line-height: 2.40px;
-      margin-bottom: 16px;
-  }
-  .btn{
-      display: inline-block;
-      padding: 18px 38px;
-      
-      background-color: var(--yellow);
-      text-transform: uppercase;
-      border-radius: 5px;
-      margin-top: 20px;
-      font-size: 2vw;
-      font-weight: bold;
-      margin-bottom: 2%;
-  
-  }
-  .btn:hover{
-      
-      display: inline-block;
-      padding: 18px 38px;
-      
-      background-color: rgb(238, 157, 5);
-      text-transform: uppercase;
-      border-radius: 5px;
-  }
-  .hamburger{
-      display: block;
-      margin-left: 400%;
-      
-      
-    }
-  
-  .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-  .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-  .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-  .navbar-menu{
-      position: fixed;
-      left: -200%;
-      top: 70px;
-      gap: -10;
-      flex-direction: column;
-      background:transparent;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-     
-    }
-  .nav-menu {
-  
-      list-style: none;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      grid-gap: 5%;
-      padding: 0;
-      width: 100%;
-      
-      
-     
-    
-  }
- 
-  
-  
-  
-  .navbar-menu.active{
-      left: 0%;
-    
-    }
-  .navbar-brand{
-      color:var(--warning);
-      padding-top: 5px;
-      font-size: 3vw;
-      font-weight: 700;
-      text-transform: uppercase;
-  }
-  .members__info {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin-top: 50px;
-      margin-bottom: 50px;
-  }
-  .grid-2{
-      
-      grid-template-columns: 1fr;
-  }
-  .contact-us-main-container {
-      font-family:'Montserrat', sans-serif;
-      background-color: #212529;
-      background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/map-image.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      height: 40%;
-      width: 100%;
-  }
-  .form-control{
-      padding: 20px;
-      padding-right: 20px;
-      width: 100%;
-      margin-right: 20%;
-      margin-left: 20%;
-  }
-  .textarea {
-      margin-left: 10%;
-      margin-right:10%;
-      width: 100%;
-      
-  }
-  input[type="text"], input[type="email"], input[type="tel"]{
-      border:none;
-      padding: 20px 40% 20px 20px;
-      font-size: 1rem;
-      border-radius: 5px;
-      color: #6c757d;
-  }
-  
-  .footer-policy {
-      margin: auto;
-  }
-  footer{
-      padding: 1vw 0 1vw 0;
-      font-size: 0.9rem;
-      background-color: var(--light);
-      
-      
-  }
 
-
-} 
+@media only screen and (max-width: 1024px) {
+    header {
+        background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 500px;
+    }
+    .showcase-text {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fix-flex {
+        clear: both;
+    }
+    .showcase-text-1 h2 {
+        font-size: 3vw;
+        font-style: italic;
+        line-height: 2.40px;
+        margin-bottom: 16px;
+        font-weight: 200;
+        font-family: 'Droid Serif';
+        letter-spacing: 2px;
+    }
+    .showcase-text-2 h1 {
+        font-size: 3vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2.40px;
+        margin-bottom: 16px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 18px 38px;
+        background-color: var(--yellow);
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 2vw;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+    .btn:hover {
+        display: inline-block;
+        padding: 18px 38px;
+        background-color: rgb(238, 157, 5);
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    .hamburger {
+        display: block;
+        margin-left: 400%;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar-menu {
+        position: fixed;
+        left: -200%;
+        top: 70px;
+        gap: -10;
+        flex-direction: column;
+        background: transparent;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-menu {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 5%;
+        padding: 0;
+        width: 100%;
+    }
+    .navbar-menu.active {
+        left: 0%;
+    }
+    .navbar-brand {
+        color: var(--warning);
+        padding-top: 5px;
+        font-size: 3vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .members__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+    .contact-us-main-container {
+        font-family: 'Montserrat', sans-serif;
+        background-color: #212529;
+        background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/map-image.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 40%;
+        width: 100%;
+    }
+    .form-control {
+        padding: 20px;
+        padding-right: 20px;
+        width: 100%;
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+    .textarea {
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 100%;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        border: none;
+        padding: 20px 40% 20px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        color: #6c757d;
+    }
+    .footer-policy {
+        margin: auto;
+    }
+    footer {
+        padding: 1vw 0 1vw 0;
+        font-size: 0.9rem;
+        background-color: var(--light);
+    }
+}
 
 
 /* mobile */
-@media only screen   
-and (max-width: 768px)
- {
-  
-  header{
-      background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
-      background-repeat: no-repeat;
-      
-      background-position: center center;
-      background-size: cover;
-      height:50%;
-      
-  }
-  .showcase-text{
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      
-  
-  }
-  .fix-flex{
-      clear: both;
-  }
-  .showcase-text-1 h2{
-      font-size: 3vw;
-      font-style: italic;
-      line-height: 2.40px;
-      margin-bottom: 10px;
-      font-weight: 200;
-      font-family: 'Droid Serif';
-      letter-spacing: 2px;
-  }
-  .showcase-text-2 h1{
-      font-size: 3vw;
-      font-weight: 500;
-      font-family: 'Montserrat', sans-serif;
-      
-      line-height: 2.40px;
-      margin-bottom: 10px;
-  }
-  .btn{
-      display: inline-block;
-      padding: 10px 25px;
-      
-      background-color: var(--yellow);
-      text-transform: uppercase;
-      border-radius: 5px;
-      margin-top: 10px;
-      font-size: 10px;
-      font-weight: bold;
-     
-  
-  }
-  .btn:hover{
-      
-      display: inline-block;
-      padding: 10px 25px;
-      font-size: 10px;
-      background-color: rgb(238, 157, 5);
-      text-transform: uppercase;
-      border-radius: 5px;
-  }
-  .hamburger{
-      display: block;
-      margin-left: 350%;
-    }
-  
-  .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-  .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-  .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-  .navbar-menu{
-      position: fixed;
-      left: -200%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background:transparent;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-  
-  .nav-item{
-      margin: 16px 0;
-    }
-  
-  
-  .navbar-brand{
-      color:var(--warning);
-      padding-top: 5px;
-      font-size: 3vw;
-      font-weight: 700;
-      text-transform: uppercase;
-      
-      
-  
-  }
-  
 
-} 
+@media only screen and (max-width: 768px) {
+    header {
+        background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 50%;
+    }
+    .showcase-text {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fix-flex {
+        clear: both;
+    }
+    .showcase-text-1 h2 {
+        font-size: 3vw;
+        font-style: italic;
+        line-height: 2.40px;
+        margin-bottom: 10px;
+        font-weight: 200;
+        font-family: 'Droid Serif';
+        letter-spacing: 2px;
+    }
+    .showcase-text-2 h1 {
+        font-size: 3vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2.40px;
+        margin-bottom: 10px;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: var(--yellow);
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 10px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .btn:hover {
+        display: inline-block;
+        padding: 10px 25px;
+        font-size: 10px;
+        background-color: rgb(238, 157, 5);
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    .hamburger {
+        display: block;
+        margin-left: 350%;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar-menu {
+        position: fixed;
+        left: -200%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background: transparent;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+    }
+    .navbar-brand {
+        color: var(--warning);
+        padding-top: 5px;
+        font-size: 3vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+
 /* mobile-smaller-screen */
-@media only screen   
-and (max-width: 513px)
- {
-  
-  header{
-      background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
-      background-repeat: no-repeat;
-      
-      background-position: center center;
-      background-size: cover;
-      height:400px;
-      
-  }
-  .showcase-text{
-      color: white;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      
-  
-  }
-  .fix-flex{
-      clear: both;
-  }
-  .showcase-text-1 h2{
-      font-size: 2vw;
-      font-style: italic;
-      line-height: 2.40px;
-      margin-bottom: 2%;
-      font-weight: 200;
-      font-family: 'Droid Serif';
-      letter-spacing: 2px;
-  }
-  .showcase-text-2 h1{
-      font-size: 2vw;
-      font-weight: 500;
-      font-family: 'Montserrat', sans-serif;
-      
-      line-height: 2.40px;
-      margin-bottom: 2%;
-  }
-  .btn{
-      display: inline-block;
-      padding: 10px 25px;
-      
-      background-color: var(--yellow);
-      text-transform: uppercase;
-      border-radius: 5px;
-      margin-top: 20px;
-      font-size: 2vw;
-      font-weight: bold;
-  
-  }
-  .btn:hover{
-      
-      display: inline-block;
-      padding: 10px 25px;
-      font-size: 2vw;
-      background-color: rgb(238, 157, 5);
-      text-transform: uppercase;
-      border-radius: 5px;
-  }
-  .hamburger{
-      display: block;
-      margin-left: 270%;
-    }
-  
-  .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-  .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-  .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-  
-  .navbar-menu{
-      position: fixed;
-      left: -280%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background:transparent;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-  
-  .nav-item{
-      margin: 16px 0;
-      font-size: 2vw;
-    }
-  
- 
-  .navbar-brand{
-      color:var(--warning);
-      padding-top: 5px;
-      font-size: 3vw;
-      font-weight: 700;
-      text-transform: uppercase;
-      
-      
-  
-  }
-  
 
-} 
+@media only screen and (max-width: 513px) {
+    header {
+        background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/header-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 400px;
+    }
+    .showcase-text {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fix-flex {
+        clear: both;
+    }
+    .showcase-text-1 h2 {
+        font-size: 2vw;
+        font-style: italic;
+        line-height: 2.40px;
+        margin-bottom: 2%;
+        font-weight: 200;
+        font-family: 'Droid Serif';
+        letter-spacing: 2px;
+    }
+    .showcase-text-2 h1 {
+        font-size: 2vw;
+        font-weight: 500;
+        font-family: 'Montserrat', sans-serif;
+        line-height: 2.40px;
+        margin-bottom: 2%;
+    }
+    .btn {
+        display: inline-block;
+        padding: 10px 25px;
+        background-color: var(--yellow);
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 2vw;
+        font-weight: bold;
+    }
+    .btn:hover {
+        display: inline-block;
+        padding: 10px 25px;
+        font-size: 2vw;
+        background-color: rgb(238, 157, 5);
+        text-transform: uppercase;
+        border-radius: 5px;
+    }
+    .hamburger {
+        display: block;
+        margin-left: 270%;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .navbar-menu {
+        position: fixed;
+        left: -280%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background: transparent;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item {
+        margin: 16px 0;
+        font-size: 2vw;
+    }
+    .navbar-brand {
+        color: var(--warning);
+        padding-top: 5px;
+        font-size: 3vw;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
 
 
 /* services */
+
 .services-text {
     padding: 1%;
     margin-bottom: 2%;
 }
+
 .services-text h2 {
     text-transform: uppercase;
     font-weight: bolder;
     font-size: 2.5rem;
     color: var(--gray-dark);
 }
-.services-text p{
+
+.services-text p {
     color: gray;
     font-style: italic;
     font-size: larger;
     text-align: center;
-    
 }
+
 .services-container {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 2%;
     width: 80%;
     /* margin-bottom: 0.5rem; */
     position: relative;
     padding: 3%;
     padding-bottom: 5%;
-    
     margin: auto;
 }
+
+
 /* span {
     margin: 0;
     padding: 0;
 } */
+
 .services-card {
     padding: 5px;
     margin: 5px;
 }
+
 .fa-circle {
     /* width: 40%; */
     color: #FED136;
-    
     margin-left: 27%;
-
 }
+
 .fa-shopping-cart {
     position: absolute;
     left: 14.8%;
     top: 18%;
     color: white;
 }
+
 .fa-laptop {
     position: absolute;
     right: 47.3%;
     top: 18%;
     color: white;
 }
+
 .fa-lock {
     position: absolute;
     right: 16.8%;
     top: 18%;
     color: white;
 }
+
 .services-container p {
     color: gray;
     text-align: center;
 }
+
 .services-container h3 {
     color: var(--gray-dark);
     font-size: 2vw;
     text-align: center;
 }
-@media only screen  
-  and (max-width: 1024px) {
+
+@media only screen and (max-width: 1024px) {
     .services-container {
-    display: grid;
-    grid-template-columns: repeat(3, 33%, 33%, 33%);
-    position: relative;
-    align-self: center;
+        display: grid;
+        grid-template-columns: repeat(3, 33%, 33%, 33%);
+        position: relative;
+        align-self: center;
     }
     .fa-shopping-cart {
         position: absolute;
@@ -665,14 +599,14 @@ and (max-width: 513px)
         top: 14%;
         right: 13.5%;
     }
-    .services-container h3, p {
+    .services-container h3,
+    p {
         padding: 10px 10px;
         text-align: center;
     }
-  }
-  @media only screen  
-  and (max-width: 600px)
-{
+}
+
+@media only screen and (max-width: 600px) {
     .services-text {
         padding: 0;
         margin: 5px;
@@ -691,12 +625,12 @@ and (max-width: 513px)
         top: 6%;
         left: 41%;
     }
-    .fa-laptop{
+    .fa-laptop {
         position: absolute;
         top: 37%;
         left: 41%;
     }
-    .fa-lock{
+    .fa-lock {
         position: absolute;
         top: 69%;
         left: 43.5%;
@@ -704,9 +638,7 @@ and (max-width: 513px)
     .fa-circle {
         /* width: 40%; */
         color: #FED136;
-        
         margin-left: 33%;
-    
     }
     .services-container h3 {
         font-size: medium;
@@ -722,16 +654,18 @@ and (max-width: 513px)
 
 
 /* our amazing team */
+
 .members {
     background-color: #f8f9fa;
 }
 
 .members-container {
     width: 100%;
-    margin-right:auto;
-    margin-left:auto;
+    margin-right: auto;
+    margin-left: auto;
 }
-.member-inner{
+
+.member-inner {
     width: 1900px;
 }
 
@@ -743,9 +677,14 @@ h3,
 
 h3 {
     font-weight: bold;
-    font-size: 40px;text-transform:uppercase;
+    font-size: 40px;
+    text-transform: uppercase;
 }
-a{text-decoration: none;}
+
+a {
+    text-decoration: none;
+}
+
 .lorem {
     color: rgb(108, 117, 125);
     font-size: 20px;
@@ -787,10 +726,6 @@ p {
     color: rgb(108, 117, 125);
 }
 
-
-
-
-
 .members__subtext {
     font-size: 20px;
     color: rgb(108, 117, 125);
@@ -799,7 +734,10 @@ p {
     width: 700px;
     padding: 40px;
 }
+
+
 /* portfolio */
+
 .portfolio {
     width: 90%;
     background-color: #F8F9FA;
@@ -807,6 +745,7 @@ p {
     margin: 0 auto;
     font-family: 'Outfit', sans-serif;
 }
+
 .main-text {
     display: grid;
     justify-content: center;
@@ -814,21 +753,25 @@ p {
     line-height: 0.5rem;
     padding-bottom: 20px;
 }
+
 .card-text {
     line-height: 0.6rem;
     padding: 1rem;
 }
+
 .card-text p {
     font-size: 1rem;
     font-style: italic;
     font-weight: bolder;
     color: #6C757D;
 }
+
 .card-text h2 {
     color: var(--dark);
     padding-top: 10px;
     font-size: 2vw;
 }
+
 .cards-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -839,27 +782,27 @@ p {
     text-align: center;
     margin: 0 auto;
 }
+
 .card {
-    
     width: 100%;
     height: 100%;
 }
+
 .images-1 {
     position: relative;
     height: 100%;
     width: 100%;
     box-sizing: border-box;
 }
-.card-image img{
-    
+
+.card-image img {
     opacity: 1;
-    
     height: 108%;
     width: 100%;
     backface-visibility: hidden;
-    
     display: block;
 }
+
 .card-icon-group {
     display: flex;
     position: absolute;
@@ -874,24 +817,16 @@ p {
     bottom: 0;
     left: 0;
     right: 0;
-   
-    
-    
-    
 }
+
 .card-image:hover .card-icon-group {
     opacity: 0.9;
     transition-duration: 0.25s;
-    
-   
-    
 }
+
 .icon-itself {
     color: white;
     margin: auto;
-    
-    
-   
 }
 
 @media (max-width:768px) {
@@ -921,11 +856,11 @@ p {
 }
 
 
-
 /* brands */
+
 .brands-container {
     margin: 2%;
-    padding: 50px; 
+    padding: 50px;
 }
 
 .brands-row {
@@ -934,12 +869,10 @@ p {
 }
 
 
-
-
-
 /* contact-us-main-container */
+
 .contact-us-main-container {
-    font-family:'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     background-color: #212529;
     background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/map-image.png);
     background-repeat: no-repeat;
@@ -948,8 +881,7 @@ p {
     width: 100%;
 }
 
-
-h2{
+h2 {
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
@@ -957,20 +889,20 @@ h2{
     text-transform: uppercase;
     text-align: center;
     padding-top: 80px;
-    
 }
-h3{
+
+h3 {
     margin: 0 0 40px 0;
     color: #6c757d;
-    
     text-align: center;
 }
 
-.grid-2{
+.grid-2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-.form-control{
+
+.form-control {
     padding: 10px;
     padding-right: 20px;
     width: 70%;
@@ -979,7 +911,7 @@ h3{
     margin-top: 0;
 }
 
-textarea{
+textarea {
     height: 100%;
     margin-top: 1.5%;
     width: 80%;
@@ -989,52 +921,57 @@ textarea{
     margin-left: 4%;
 }
 
-.your-message{
+.your-message {
     color: #6c757d;
     padding: 20px 0 0px 10px;
     font-size: 1rem;
 }
-.page-section{
-    max-width: 100%; 
+
+.page-section {
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 40px;
 }
 
-input[type="text"], input[type="email"], input[type="tel"]{
-    border:none;
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border: none;
     padding: 20px 80% 20px 20px;
     font-size: 1rem;
     border-radius: 5px;
     color: #6c757d;
 }
 
-
-.send-message{
+.send-message {
     display: flex;
     justify-content: center;
 }
-  /* Footer */
-footer{
+
+
+/* Footer */
+
+footer {
     padding: 1vw 0 1vw 0;
     font-size: 0.9rem;
     background-color: var(--light);
-    
-    
 }
+
 .footer-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: 1%;
-
 }
+
 .footer-container a {
     text-decoration: none;
-
 }
+
 .footer-copyright {
     padding: 1vw;
     text-align: center;
 }
+
 .footer-container .footer-copyright p {
     font-style: none;
     vertical-align: center;
@@ -1054,8 +991,80 @@ footer{
     color: white;
 }
 
+
+/* statrting of members part*/
+
+.members {
+    background-color: #f8f9fa;
+}
+
+.members__container {
+    background-color: #f8f9fa;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.members h3,
+.members__lorem {
+    text-align: center;
+}
+
+.members h3 {
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.members__lorem {
+    color: rgb(108, 117, 125);
+    font-size: 20px;
+    font-style: italic;
+    padding-top: 10px;
+}
+
+.members__info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.members__card {
+    text-align: center;
+}
+
+.members__card img {
+    width: 210px;
+    height: 220px;
+    border-radius: 50%;
+    border: 0.5rem solid rgba(0, 0, 0, 0.1);
+}
+
+.members__name {
+    font-weight: bold;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.members__major {
+    margin-top: 5px;
+    font-size: 18px;
+    color: rgb(108, 117, 125);
+}
+
+.members__icons {
+    margin: 15px 30px;
+    width: 155px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.members__icons i {
+    font-size: 15px;
+    color: white;
+}
+
 .members__icon {
-    background: #30332f;
+    background: #474945;
     height: 2.5rem;
     width: 2.5rem;
     display: inline-flex;
@@ -1068,37 +1077,110 @@ footer{
 .members__icon:hover {
     background: #121312;
 }
-.footer-policy a{
+
+.members__subtext {
+    font-size: 20px;
+    color: rgb(108, 117, 125);
+    margin: 0 auto;
+    text-align: center;
+    width: 700px;
+    padding: 40px;
+}
+
+@media(max-width: 1024px) {
+    .members__container {
+        width: 100%;
+    }
+    .members__info {
+        display: block;
+    }
+    .members__icons {
+        margin: 0 auto;
+        width: 155px;
+    }
+    .members__card {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .members__major {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb(108, 117, 125);
+    }
+    .members__subtext {
+        width: 0 auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .members__container {
+        width: 100%;
+    }
+    .members__info {
+        display: block;
+    }
+    .members__icons {
+        margin: 0 auto;
+        width: 155px;
+    }
+    .members__card img {
+        width: 180px;
+        height: 180px;
+    }
+    .members__card {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .members__major {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb(108, 117, 125);
+    }
+}
+
+@media(max-width: 1024px) {
+    .members__container {
+        width: 100%;
+    }
+    .members h3 {
+        font-size: 30px;
+    }
+    .members__info {
+        display: block;
+    }
+    .members__icons {
+        margin: 0 auto;
+        width: 155px;
+    }
+    .members__card {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .members__major {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb(108, 117, 125);
+    }
+}
+
+
+/* ending of members part*/
+
+.footer-policy a {
     color: var(--primary);
     margin: 20px;
 }
-.footer-policy a:hover{
-    color:  violet;
+
+.footer-policy a:hover {
+    color: violet;
 }
+
 .footer-policy {
     padding: 1vw;
     text-align: center;
     margin-top: 1%;
 }
+
 .footer-policy-flex {
     display: flex;
-    
 }
-
-
-
-
-
-
-    
-
-
-
-  
-      
-
-
-
-
-    
-    
