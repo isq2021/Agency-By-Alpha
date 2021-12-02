@@ -136,7 +136,7 @@ header{
 .btn{
     display: inline-block;
     padding: 25px 50px;
-    
+    color: var(--light);
     background-color: var(--yellow);
     text-transform: uppercase;
     border-radius: 5px;
@@ -724,6 +724,8 @@ and (max-width: 513px)
 /* our amazing team */
 .members {
     background-color: #f8f9fa;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .members-container {
@@ -731,26 +733,25 @@ and (max-width: 513px)
     margin-right:auto;
     margin-left:auto;
 }
-.member-inner{
+.member__inner{
     width: 1900px;
 }
 
-h3,
-.lorem {
+.members__inner h3 {
     text-align: center;
     padding-top: 20px;
-}
-
-h3 {
+    color: var(--dark);
     font-weight: bold;
     font-size: 40px;text-transform:uppercase;
+    margin-bottom: 2%;
 }
 a{text-decoration: none;}
-.lorem {
+.members .lorem {
     color: rgb(108, 117, 125);
-    font-size: 20px;
+    font-size: 1rem;
     font-style: italic;
     padding-top: 10px;
+    text-align: center;
 }
 
 .members__info {
@@ -770,7 +771,7 @@ a{text-decoration: none;}
     border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 
-h3,
+.members__info h3,
 p {
     margin: 0;
 }
@@ -800,8 +801,14 @@ p {
     padding: 40px;
 }
 @media(max-width: 1024px) {
+    .members {
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
     .members__container {
         width: 100%;
+        
     }
     .members__info {
         display: flex;
@@ -809,8 +816,7 @@ p {
         justify-content: space-around;
         margin-top: 50px;
         width: 100%;
-        margin-right: 2rem;
-        margin-left: 2rem;
+        
 
     }
     .members__icons {
@@ -831,7 +837,7 @@ p {
     }
 }
 
-@media(max-width: 800px) {
+@media(max-width: 768px) {
     .members__container {
         width: 100%;
     }
@@ -854,6 +860,15 @@ p {
         margin-bottom: 15px;
         font-size: 18px;
         color: rgb(108, 117, 125);
+    }
+    .members__subtext {
+        font-size: 1rem;
+        color: rgb(108, 117, 125);
+        
+        text-align: center;
+        width: 40rem;
+        padding: 1%;
+        padding-bottom: 5%;
     }
 }
 /* portfolio */
@@ -983,11 +998,35 @@ p {
 .brands-container {
     margin: 2%;
     padding: 50px; 
+    width: 90%;
 }
 
 .brands-row {
     display: flex;
     justify-content: space-around;
+}
+@media (max-width:768px) {
+    .brands-container {
+        margin-left:5% ;
+        margin-right: 5%;
+        padding: 1rem; 
+        width: 80%;
+        text-align: center;
+        
+    }
+    .brands-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:1rem;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .brands-row img{
+        width: 100%;
+        margin: auto;
+    }
 }
 
 
@@ -1140,6 +1179,19 @@ footer{
 .footer-policy-flex {
     display: flex;
     
+}
+@media (max-width:768px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1%;
+    
+    }
+    .icons {
+        
+        margin-top: 1%;
+    }
+
 }
 
 
