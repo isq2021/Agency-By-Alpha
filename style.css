@@ -799,6 +799,63 @@ p {
     width: 700px;
     padding: 40px;
 }
+@media(max-width: 1024px) {
+    .members__container {
+        width: 100%;
+    }
+    .members__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+        width: 100%;
+        margin-right: 2rem;
+        margin-left: 2rem;
+
+    }
+    .members__icons {
+        margin: 0 auto;
+        width: 155px;
+    }
+    .members__card {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .members__major {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb(108, 117, 125);
+    }
+    .members__subtext {
+        width: 0 auto;
+    }
+}
+
+@media(max-width: 800px) {
+    .members__container {
+        width: 100%;
+    }
+    .members__info {
+        display: block;
+    }
+    .members__icons {
+        margin: 0 auto;
+        width: 155px;
+    }
+    .members__card img {
+        width: 180px;
+        height: 180px;
+    }
+    .members__card {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .members__major {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb(108, 117, 125);
+    }
+}
 /* portfolio */
 .portfolio {
     width: 90%;
