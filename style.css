@@ -136,7 +136,7 @@ header{
 .btn{
     display: inline-block;
     padding: 25px 50px;
-    
+    color: var(--light);
     background-color: var(--yellow);
     text-transform: uppercase;
     border-radius: 5px;
@@ -724,6 +724,8 @@ and (max-width: 513px)
 /* our amazing team */
 .members {
     background-color: #f8f9fa;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .members-container {
@@ -731,26 +733,25 @@ and (max-width: 513px)
     margin-right:auto;
     margin-left:auto;
 }
-.member-inner{
+.member__inner{
     width: 1900px;
 }
 
-h3,
-.lorem {
+.members__inner h3 {
     text-align: center;
     padding-top: 20px;
-}
-
-h3 {
+    color: var(--dark);
     font-weight: bold;
     font-size: 40px;text-transform:uppercase;
+    margin-bottom: 2%;
 }
 a{text-decoration: none;}
-.lorem {
+.members .lorem {
     color: rgb(108, 117, 125);
-    font-size: 20px;
+    font-size: 1rem;
     font-style: italic;
     padding-top: 10px;
+    text-align: center;
 }
 
 .members__info {
@@ -770,7 +771,7 @@ a{text-decoration: none;}
     border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
 
-h3,
+.members__info h3,
 p {
     margin: 0;
 }
@@ -798,6 +799,77 @@ p {
     text-align: center;
     width: 700px;
     padding: 40px;
+}
+@media(max-width: 1024px) {
+    .members {
+        margin-right: 5%;
+        margin-left: 5%;
+
+    }
+    .members__container {
+        width: 100%;
+        
+    }
+    .members__info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 50px;
+        width: 100%;
+        
+
+    }
+    .members__icons {
+        margin: 0 auto;
+        width: 155px;
+    }
+    .members__card {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .members__major {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb(108, 117, 125);
+    }
+    .members__subtext {
+        width: 0 auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .members__container {
+        width: 100%;
+    }
+    .members__info {
+        display: block;
+    }
+    .members__icons {
+        margin: 0 auto;
+        width: 155px;
+    }
+    .members__card img {
+        width: 180px;
+        height: 180px;
+    }
+    .members__card {
+        text-align: center;
+        margin-top: 40px;
+    }
+    .members__major {
+        margin-bottom: 15px;
+        font-size: 18px;
+        color: rgb(108, 117, 125);
+    }
+    .members__subtext {
+        font-size: 1rem;
+        color: rgb(108, 117, 125);
+        
+        text-align: center;
+        width: 40rem;
+        padding: 1%;
+        padding-bottom: 5%;
+    }
 }
 /* portfolio */
 .portfolio {
@@ -926,11 +998,35 @@ p {
 .brands-container {
     margin: 2%;
     padding: 50px; 
+    width: 90%;
 }
 
 .brands-row {
     display: flex;
     justify-content: space-around;
+}
+@media (max-width:768px) {
+    .brands-container {
+        margin-left:5% ;
+        margin-right: 5%;
+        padding: 1rem; 
+        width: 80%;
+        text-align: center;
+        
+    }
+    .brands-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap:1rem;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        margin-left: 5%;
+    }
+    .brands-row img{
+        width: 100%;
+        margin: auto;
+    }
 }
 
 
@@ -938,81 +1034,160 @@ p {
 
 
 /* contact-us-main-container */
-.contact-us-main-container {
-    font-family:'Montserrat', sans-serif;
-    background-color: #212529;
-    background-image: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/map-image.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 700px;
-    width: 100%;
+/* Contact Section */
+.contact-flex{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
-
-
-h2{
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
-    line-height: 1.2;
+.contact-us h2{
+    color: white;
+    font-size: 2.5rem;
     text-transform: uppercase;
-    text-align: center;
-    padding-top: 80px;
-    
-}
-h3{
-    margin: 0 0 40px 0;
-    color: #6c757d;
-    
-    text-align: center;
-}
-
-.grid-2{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.form-control{
-    padding: 10px;
-    padding-right: 20px;
-    width: 70%;
-    margin-right: 1%;
-    margin-left: 15%;
-    margin-top: 0;
-}
-
-textarea{
-    height: 100%;
-    margin-top: 1.5%;
-    width: 80%;
-    border-radius: 5px;
+    font-weight: 700;
     font-family: 'Montserrat', sans-serif;
-    color: #6c757d;
-    margin-left: 4%;
+    padding-top: 120px;
+    text-align: center;
 }
 
-.your-message{
-    color: #6c757d;
-    padding: 20px 0 0px 10px;
-    font-size: 1rem;
+.contact-us h4{
+    padding: 0 0 40px 0;
+    font-style: italic;
+    color: var(--gray);
+    text-align: center;
 }
-.page-section{
-    max-width: 100%; 
-    margin: 0 auto;
-    padding: 0 40px;
+.contact-us{
+    background: url(https://learn.seytech.co/assets/projects/html-css/projects/1-agency/assets/img/map-image.png);
+    background-color: #212529;
+    height: 100vh;
+    margin-top: 50px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 input[type="text"], input[type="email"], input[type="tel"]{
     border:none;
-    padding: 20px 80% 20px 20px;
-    font-size: 1rem;
-    border-radius: 5px;
-    color: #6c757d;
+    padding: 20px 250px 20px 20px;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    border-radius: 7px;
+    font-weight: bold;
+}
+.each-form{
+    margin: 20px;
+}
+
+textarea{
+    border-radius: 7px;
+    height: 12.59rem;
+    margin-top: 20px;
+    width: 500px;
+}
+.form{
+    padding: 20px 0 0 20px;
+    font-size: 1.1rem;
+    color: var(--secondary);
+    font-weight: bold;
+    border: none;
+}
+
+.contact-us .btn{
+    margin-left: 37rem;
+    margin-right: 34rem;
+    
 }
 
 
-.send-message{
-    display: flex;
-    justify-content: center;
+@media screen and (max-width: 1100px){
+    
+    input[type="text"], input[type="email"], input[type="tel"]{
+        border:none;
+        padding: 20px 120px 20px 20px;
+    }
+
+    textarea{
+        border-radius: 7px;
+        height: 12.5rem;
+        margin-top: 20px;
+        width: 370px;
+    }
+    .contact-us .btn{
+        display: inline-block;
+        padding: 25px 50px;
+        color: var(--light);
+        background-color: var(--yellow);
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 20px;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 25rem;
+        margin-right: 20rem;
+    }
+
 }
+
+    @media screen and (max-width: 768px){
+        
+    .contact-flex{
+        display: block;
+    }
+    input[type="text"], input[type="email"], input[type="tel"]{
+        border:none;
+        padding: 20px 210px 20px 20px;
+        display: block;
+        margin: auto;
+    }
+
+    .textarea{
+        border-radius: 7px;
+        height: 150px;
+        margin-top: 20px;
+        width: 30px;
+        margin-left: 130px;
+        display: block;
+        margin-right: 5px;
+    }
+    .each-form{
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    .contact-us h4{
+        margin: 0;
+        padding: 0;
+    }
+    .contact-us h2{
+        margin: 30px 0 0 0;
+        padding: 50px 0 20px 0;
+    }
+    .form{
+        
+        margin-left:44px;
+        font-size: 1.1rem;
+        color: var(--secondary);
+        font-weight: bold;
+        border: none;
+    }
+    .contact-us .btn{
+        display: inline-block;
+        padding: 25px 50px;
+        color: var(--light);
+        background-color: var(--yellow);
+        text-transform: uppercase;
+        border-radius: 5px;
+        margin-top: 113px;
+        font-size: 17px;
+        font-weight: bold;
+        margin-left: 15rem;
+        margin-right: 15rem;
+    }
+
+
+}
+
+
   /* Footer */
 footer{
     padding: 1vw 0 1vw 0;
@@ -1083,6 +1258,19 @@ footer{
 .footer-policy-flex {
     display: flex;
     
+}
+@media (max-width:768px) {
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 1%;
+    
+    }
+    .icons {
+        
+        margin-top: 1%;
+    }
+
 }
 
 
