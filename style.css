@@ -1569,6 +1569,16 @@ footer{
         margin-top: 115px;
     }
   }
+  @media only screen  
+  and (max-width: 412px){
+      .hamburger{
+        margin-left: 210%;
+
+      }
+      .form{
+          margin-left: -124px;
+      }
+  }
 
 
 
