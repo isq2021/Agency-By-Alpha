@@ -1534,7 +1534,7 @@ footer{
           height: 50%;
       }
       .form {
-        margin-left: -105px;
+        margin-left: -135px;
 
       }
       input[type="text"], input[type="email"], input[type="tel"]{
@@ -1544,6 +1544,29 @@ footer{
         border-radius: 5px;
         color: #6c757d;
         width: 30%;
+    }
+  }
+  @media only screen  
+  and (max-width: 494px){
+      header{
+          height: 50%;
+      }
+      .form {
+        margin-left: -91px;
+
+      }
+      input[type="text"], input[type="email"], input[type="tel"]{
+        border:none;
+        padding: 20px 40% 20px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        color: #6c757d;
+        width: 30%;
+    }
+    .contact-us .btn {
+        margin-left: 7rem;
+        margin-right: -12rem;
+        margin-top: 115px;
     }
   }
 
