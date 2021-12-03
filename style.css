@@ -614,31 +614,8 @@ and (max-width: 513px)
     padding: 5px;
     margin: 5px;
 }
-.fa-circle {
-    /* width: 40%; */
-    color: #FED136;
-    
-    margin-left: 27%;
 
-}
-.fa-shopping-cart {
-    position: absolute;
-    left: 14.8%;
-    top: 18%;
-    color: white;
-}
-.fa-laptop {
-    position: absolute;
-    right: 47.3%;
-    top: 18%;
-    color: white;
-}
-.fa-lock {
-    position: absolute;
-    right: 16.8%;
-    top: 18%;
-    color: white;
-}
+
 .services-container p {
     color: gray;
     text-align: center;
@@ -648,6 +625,29 @@ and (max-width: 513px)
     font-size: 2vw;
     text-align: center;
 }
+.services-card-icon{
+    width: 7rem;
+    height: 7rem;
+    display: inline-block;
+    border-radius: 50%;
+    margin:auto;
+    background-color: var(--primary);
+    display: flex;
+    justify-content: center;
+}
+.services-card-icon .fas {
+    font-size: 3.5rem;
+    display: inline-block;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.8;
+    align-items: center;
+    color: var(--light);
+    
+    
+}
+
 @media only screen  
   and (max-width: 1024px) {
     .services-container {
@@ -656,21 +656,7 @@ and (max-width: 513px)
     position: relative;
     align-self: center;
     }
-    .fa-shopping-cart {
-        position: absolute;
-        top: 14%;
-        left: 16%;
-    }
-    .fa-laptop {
-        position: absolute;
-        top: 14%;
-        left: 47.4%;
-    }
-    .fa-lock {
-        position: absolute;
-        top: 14%;
-        right: 13.5%;
-    }
+    
     .services-container h3, p {
         padding: 10px 10px;
         text-align: center;
@@ -695,28 +681,7 @@ and (max-width: 513px)
         position: relative;
         /* padding: 10px; */
     }
-    .fa-shopping-cart {
-        position: absolute;
-        top: 6%;
-        left: 41%;
-    }
-    .fa-laptop{
-        position: absolute;
-        top: 37%;
-        left: 41%;
-    }
-    .fa-lock{
-        position: absolute;
-        top: 69%;
-        left: 43.5%;
-    }
-    .fa-circle {
-        /* width: 40%; */
-        color: #FED136;
-        
-        margin-left: 33%;
     
-    }
     .services-container h3 {
         font-size: medium;
         text-align: center;
@@ -731,30 +696,13 @@ and (max-width: 513px)
 }
 @media only screen  
   and (max-width: 768px){
-    .fa-shopping-cart{
-        top: 16%;
-        left: 12.5%;
-    }
-    .fa-laptop {
-        position: absolute;
-        top: 16%;
-        left: 44.5%;
-    }
-    .fa-lock {
-        position: absolute;
-        top: 14.5%;
-        right: 13.5%;
-    }
+    
     .services-container p {
         color: gray;
         text-align: center;
         font-size: 10px;
     }
-    .fa-circle {
-       
-        color: #FED136;
-        margin-left: 10%;
-    }
+    
   }
 
 
@@ -1396,6 +1344,99 @@ footer{
     }
 
 }
+/* media for mobile all */
+@media only screen  
+  and (max-width: 320px){
+      header{
+          height: 80%;
+      }
+      .navbar{
+          margin-right: 20%;
+          margin-left: 1%;
+      }
+      .hamburger{
+          margin-left: 220%;
+      }
+      .showcase-text {
+          padding: 16% 5%;
+      }
+      .showcase-text-1{
+          font-size: 20em;
+          margin-bottom: 10px;
+      }
+      .showcase-text-2{
+          font-size: 14rem;
+          margin-bottom: 10px;
+
+      }
+      .btn {
+          font-size: 1vw;
+          margin-top: 1px;
+          padding: 5px 13px;
+      }
+      .btn:hover{
+        font-size: 1vw;
+        margin-top: 1px;
+        padding: 5px 13px;
+      }
+      .nav-menu {
+          margin-top: 10%;
+      }
+      /* services */
+      .services-text h2{
+          font-size: 1rem;
+      }
+      .services-text p{
+          font-size: small;
+      }
+      .services-card-icon{
+        width: 4rem;
+        height: 4rem;
+        display: inline-block;
+        border-radius: 50%;
+        margin:auto;
+        background-color: var(--primary);
+        display: flex;
+        justify-content: center;
+    }
+    .services-card-icon .fas {
+        font-size: 2rem;
+        display: inline-block;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+        align-items: center;
+        color: var(--light);
+        
+        
+    }
+      /* contact us */
+      .form {
+          margin-left: -120px;
+          
+      }
+      textarea {
+          height: 9rem;
+          width: 262px;
+      }
+      input[type="text"], input[type="email"], input[type="tel"]{
+        border:none;
+        padding: 20px 40% 20px 20px;
+        font-size: 1rem;
+        border-radius: 5px;
+        color: #6c757d;
+        width: 50%;
+    }
+    .contact-us .btn {
+        margin-left: 2rem;
+        margin-right: -12rem;
+        margin-top: 54px;
+    }
+      
+
+
+  }
 
 
 
